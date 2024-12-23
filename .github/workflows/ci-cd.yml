@@ -1,0 +1,19 @@
+name: CI/CD
+on: [push]
+jobs:
+    CI:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - name: Setup .NET SDK
+              uses: actions/setup-dotnet@v3
+              with:
+                  dotnet-version: "8.x"
+            - name: Restore
+              run: dotnet restore --nologo
+            - name: Build
+              run: dotnet build --no-restore -c Release --nologo
+            - name: Test
+              run: dotnet test --no-restore --no-build -c Release -v normal --nologo
+            - name: Publish
+              run: dotnet publish --no-build -c Release -o ./publish/SharpOutcome --nologo ./src/SharpOutcome/SharpOutcome.csproj
