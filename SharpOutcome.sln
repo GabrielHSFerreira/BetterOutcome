@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpOutcome", "src\SharpOutcome\SharpOutcome.csproj", "{2C19E0A7-BD39-4EED-A6E8-2DA8B3D52081}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpOutcome.UnitTests", "src\SharpOutcome.UnitTests\SharpOutcome.UnitTests.csproj", "{17F7D9E9-510E-4F81-BA46-89224FA6116B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpOutcome.Samples.ControllerApis", "src\SharpOutcome.Samples.ControllerApis\SharpOutcome.Samples.ControllerApis.csproj", "{7B1D421D-7723-4346-B6C6-A034D007BDE5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{17F7D9E9-510E-4F81-BA46-89224FA6116B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17F7D9E9-510E-4F81-BA46-89224FA6116B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17F7D9E9-510E-4F81-BA46-89224FA6116B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B1D421D-7723-4346-B6C6-A034D007BDE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B1D421D-7723-4346-B6C6-A034D007BDE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B1D421D-7723-4346-B6C6-A034D007BDE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B1D421D-7723-4346-B6C6-A034D007BDE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
