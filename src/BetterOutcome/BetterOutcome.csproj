@@ -12,16 +12,21 @@
 		<PackageId>BetterOutcome</PackageId>
 		<Version>1.0.0</Version>
 		<Authors>Gabriel Henrique da Silva Ferreira</Authors>
-		<Company>GabrielHSFerreira</Company>
+		<Company>Gabriel Henrique da Silva Ferreira</Company>
 		<ProductName>BetterOutcome</ProductName>
 		<Title>BetterOutcome</Title>
 		<Description>The BetterOutcome library aims to provide a simple and object-oriented Option implementation for C# (slightly inspired by Rust's implementation).</Description>
 		<PackageTags>option pattern</PackageTags>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+		<Copyright>Copyright (c) Gabriel Henrique da Silva Ferreira 2025.</Copyright>
+		<PackageProjectUrl>https://github.com/GabrielHSFerreira/BetterOutcome</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/GabrielHSFerreira/BetterOutcome</RepositoryUrl>
 	</PropertyGroup>
 
 	<ItemGroup>
 		<None Include="..\..\README.md" Pack="true" PackagePath="\"/>
+		<None Include="..\..\LICENSE.md" Pack="true" PackagePath="\"/>
 	</ItemGroup>
 
 </Project>
