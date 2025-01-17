@@ -1,4 +1,6 @@
-﻿namespace SharpOutcome.UnitTests.Options
+﻿using BetterOutcome;
+
+namespace BetterOutcome.UnitTests.Options
 {
     public class OptionTests
     {

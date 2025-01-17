@@ -23,7 +23,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\SharpOutcome\SharpOutcome.csproj" />
+	  <ProjectReference Include="..\BetterOutcome\BetterOutcome.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>

@@ -1,4 +1,4 @@
-﻿namespace SharpOutcome
+﻿namespace BetterOutcome
 {
     public abstract record Option<T>
     {

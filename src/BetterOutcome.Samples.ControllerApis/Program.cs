@@ -1,4 +1,4 @@
-namespace SharpOutcome.Samples.ControllerApis
+namespace BetterOutcome.Samples.ControllerApis
 {
     public static class Program
     {

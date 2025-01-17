@@ -1,6 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BetterOutcome;
+using Microsoft.AspNetCore.Mvc;
 
-namespace SharpOutcome.Samples.ControllerApis.Controllers
+namespace BetterOutcome.Samples.ControllerApis.Controllers
 {
     [Route("api/customers")]
     [ApiController]
