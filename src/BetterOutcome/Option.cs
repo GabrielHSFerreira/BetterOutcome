@@ -9,10 +9,10 @@
     public abstract record Option<T>
     {
         /// <summary>
-        /// Creates an instance of Option&lt;T&gt; based on a nullable value.
+        /// Creates an instance of <see cref="Option{T}"/> based on a nullable value.
         /// </summary>
         /// <param name="value">The nullable value to wrap.</param>
-        /// <returns>An Option value of T.</returns>
+        /// <returns>An instance of <see cref="Option{T}"/>.</returns>
         public static Option<T> CreateFromValue(object? value)
         {
             if (value is T some)
@@ -22,10 +22,10 @@
         }
 
         /// <summary>
-        /// Creates an instance of Option&lt;T&gt; based on a nullable value.
+        /// Creates an instance of <see cref="Option{T}"/> based on a nullable value.
         /// </summary>
         /// <param name="value">The nullable value to wrap.</param>
-        /// <returns>An Option value of T.</returns>
+        /// <returns>An instance of <see cref="Option{T}"/>.</returns>
         public static Option<T> CreateFromValue<TInput>(TInput? value) where TInput : struct
         {
             if (value is T some)
@@ -49,10 +49,10 @@
         public T Value { get; init; }
 
         /// <summary>
-        /// Creates an instance of Some&lt;T&gt; based on a not-null value.
+        /// Creates an instance of <see cref="Some{T}"/> based on a not-null value.
         /// </summary>
         /// <param name="value">The not-null value to wrap.</param>
-        /// <returns>A Some value of T.</returns>
+        /// <returns>An instance of <see cref="Some{T}"/>.</returns>
         /// <exception cref="ArgumentNullException">Thrown when the value is null.</exception>
         public Some(T value)
         {
@@ -60,10 +60,10 @@
         }
 
         /// <summary>
-        /// Creates an instance of Some&lt;T&gt; based on a not-null value.
+        /// Creates an instance of <see cref="Some{T}"/> based on a not-null value.
         /// </summary>
         /// <param name="value">The not-null value to wrap.</param>
-        /// <returns>A Some value of T.</returns>
+        /// <returns>An instance of <see cref="Some{T}"/>.</returns>
         /// <exception cref="ArgumentNullException">Thrown when the value is null.</exception>
         public static Some<T> Create(T value)
         {
@@ -80,15 +80,15 @@
     public record None<T> : Option<T>
     {
         /// <summary>
-        /// Creates a value of None&lt;T&gt;.
+        /// Creates a value of <see cref="None{T}"/>.
         /// </summary>
-        /// <returns>A None value of T.</returns>
+        /// <returns>An instance of <see cref="None{T}"/>.</returns>
         public None() { }
 
         /// <summary>
-        /// Creates a value of None&lt;T&gt;.
+        /// Creates a value of <see cref="None{T}"/>.
         /// </summary>
-        /// <returns>A None value of T.</returns>
+        /// <returns>An instance of <see cref="None{T}"/>.</returns>
         public static None<T> Create()
         {
             return new None<T>();
