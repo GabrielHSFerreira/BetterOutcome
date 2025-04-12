@@ -8,7 +8,12 @@ The BetterOutcome library aims to provide a simple and object-oriented Option im
 
 ## Quickstart
 
+First of all, install the package.
+
+`dotnet add package BetterOutcome`
+
 In this simple example, Option is used to wrap the result of a Customer query endpoint and return Ok or NotFound accordingly.
+
 ```csharp
 [HttpGet("{id:int}")]
 public IActionResult Get(int id)
