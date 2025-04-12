@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetterOutcome", "src\Better
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetterOutcome.UnitTests", "src\BetterOutcome.UnitTests\BetterOutcome.UnitTests.csproj", "{17F7D9E9-510E-4F81-BA46-89224FA6116B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetterOutcome.Samples.ControllerApis", "src\BetterOutcome.Samples.ControllerApis\BetterOutcome.Samples.ControllerApis.csproj", "{7B1D421D-7723-4346-B6C6-A034D007BDE5}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{17F7D9E9-510E-4F81-BA46-89224FA6116B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17F7D9E9-510E-4F81-BA46-89224FA6116B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17F7D9E9-510E-4F81-BA46-89224FA6116B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7B1D421D-7723-4346-B6C6-A034D007BDE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7B1D421D-7723-4346-B6C6-A034D007BDE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7B1D421D-7723-4346-B6C6-A034D007BDE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7B1D421D-7723-4346-B6C6-A034D007BDE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
