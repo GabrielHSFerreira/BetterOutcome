@@ -16,4 +16,4 @@ jobs:
             - name: Test
               run: dotnet test --no-restore --no-build -c Release -v normal --nologo
             - name: Publish
-              run: dotnet pack .\src\BetterOutcome\BetterOutcome.csproj --nologo --no-restore --no-build -c Release -o .\publish\
+              run: dotnet pack ./src/BetterOutcome/BetterOutcome.csproj --nologo --no-restore --no-build -c Release -o .\publish\
