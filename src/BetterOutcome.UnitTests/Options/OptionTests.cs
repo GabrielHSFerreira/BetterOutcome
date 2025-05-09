@@ -1,6 +1,4 @@
-﻿using BetterOutcome;
-
-namespace BetterOutcome.UnitTests.Options
+﻿namespace BetterOutcome.UnitTests.Options
 {
     public class OptionTests
     {
@@ -216,6 +214,105 @@ namespace BetterOutcome.UnitTests.Options
             // Assert
             Assert.NotNull(option);
             Assert.IsType<None<DummyRecordStruct>>(option);
+        }
+
+        [Fact]
+        public void SomeEquality_SameStructTypeAndValue_Equal()
+        {
+            // Arrange
+            var someA = Some<int>.Create(10);
+            var someB = Some<int>.Create(10);
+
+            // Act
+            var areEqual = someA.Equals(someB);
+
+            // Assert
+            Assert.True(areEqual);
+        }
+
+        [Fact]
+        public void SomeEquality_DifferentStructTypeAndValue_NotEqual()
+        {
+            // Arrange
+            var someA = Some<decimal>.Create(10.500M);
+            var someB = Some<int>.Create(5000);
+
+            // Act
+            var areEqual = someA.Equals(someB);
+
+            // Assert
+            Assert.False(areEqual);
+        }
+
+        [Fact]
+        public void SomeEquality_DifferentStructTypeAndSameValue_NotEqual()
+        {
+            // Arrange
+            var someA = Some<decimal>.Create(5000);
+            var someB = Some<int>.Create(5000);
+
+            // Act
+            var areEqual = someA.Equals(someB);
+
+            // Assert
+            Assert.False(areEqual);
+        }
+
+        [Fact]
+        public void SomeEquality_SameReferenceTypeAndValue_Equal()
+        {
+            // Arrange
+            var value = new DummyClass(10);
+            var someA = Some<DummyClass>.Create(value);
+            var someB = Some<DummyClass>.Create(value);
+
+            // Act
+            var areEqual = someA.Equals(someB);
+
+            // Assert
+            Assert.True(areEqual);
+        }
+
+        [Fact]
+        public void SomeEquality_DifferentReferenceTypeAndValue_NotEqual()
+        {
+            // Arrange
+            var someA = Some<DummyClass>.Create(new DummyClass(10));
+            var someB = Some<string>.Create("Test");
+
+            // Act
+            var areEqual = someA.Equals(someB);
+
+            // Assert
+            Assert.False(areEqual);
+        }
+
+        [Fact]
+        public void NoneEquality_SameType_Equal()
+        {
+            // Arrange
+            var noneA = None<int>.Create();
+            var noneB = None<int>.Create();
+
+            // Act
+            var areEqual = noneA.Equals(noneB);
+
+            // Assert
+            Assert.True(areEqual);
+        }
+
+        [Fact]
+        public void NoneEquality_DifferentType_NotEqual()
+        {
+            // Arrange
+            var noneA = None<int>.Create();
+            var noneB = None<string>.Create();
+
+            // Act
+            var areEqual = noneA.Equals(noneB);
+
+            // Assert
+            Assert.False(areEqual);
         }
 
         private class DummyClass
